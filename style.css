@@ -54,20 +54,21 @@
 
 }
 
-.button {
+.signIn {
     position: absolute;
+    padding: 5px 25px;
     color: white;
-    border: 2px solid white;
     background-color: red;
-    padding: 5px 5px 5px 5px;
     text-decoration: none;
     font-size: 20px;
     border-radius: 5px;
+    border: none;
     top: 20px;
     right: 20px;
+    cursor: pointer;
 }
 
-.button:hover {
+.signIn:hover {
     background-color: darkred;
     transition: 0.3s;
 }
@@ -89,7 +90,15 @@
 
 .input {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
+
+.input>div {
+    display: flex;
+    margin-top: 10px;
 }
 
 .input p {
@@ -97,21 +106,34 @@
     margin-bottom: 10px;
 }
 
-.input email {
+.input input {
     padding: 10px;
     font-size: 16px;
     width: 300px;
     border: none;
+    background: rgba(0, 0, 0, 0.7);
+    /* black transparent */
+    color: white;
+
+    border: 1px solid #555;
     border-radius: 2px;
 }
 
-.input button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 2px;
+.getStarted {
+    position: static;
+    /* global absolute se bahar */
+    height: 55px;
+    padding: 0 25px;
+    font-size: 18px;
     margin-left: 10px;
     background-color: red;
     color: white;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
+}
+
+.getStarted:hover {
+    background-color: darkred;
+    transition: 0.3s;
 }
